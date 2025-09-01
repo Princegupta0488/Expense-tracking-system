@@ -1,41 +1,33 @@
-# 💰 Expense Tracking System  
+# Expense Management System
 
-A full-stack **Expense Tracking System** built with **Python**, featuring:  
-- ⚡ **Backend:** FastAPI  
-- 🗄️ **Database:** MySQL  
-- 🎨 **Frontend:** Streamlit  
+This project is an expense management system that consists of a Streamlit frontend application and a FastAPI backend server.
 
-This project helps users track daily expenses, categorize them, and visualize spending patterns with interactive charts and summaries.  
 
----
+## Project Structure
 
-## 🚀 Features  
+- **frontend/**: Contains the Streamlit application code.
+- **backend/**: Contains the FastAPI backend server code.
+- **tests/**: Contains the test cases for both frontend and backend.
+- **requirements.txt**: Lists the required Python packages.
+- **README.md**: Provides an overview and instructions for the project.
 
-- ✅ Add, update, and delete expenses  
-- ✅ Store data securely in **MySQL**  
-- ✅ RESTful APIs using **FastAPI**  
-- ✅ Interactive **Streamlit dashboard**  
-- ✅ Visual reports with:  
-  - 📊 Daily expense **bar chart** (between selected start & end dates)  
-  - 📉 Category-wise percentage chart  
-  - 📑 Total expense summary  
 
----
+## Setup Instructions
 
-## 🛠️ Tech Stack  
-
-| Layer     | Technology |
-|-----------|------------|
-| Backend   | FastAPI    |
-| Database  | MySQL      |
-| Frontend  | Streamlit  |
-| Language  | Python 3.x |
-
----
-
-## ⚙️ Installation & Setup  
-
-### 1. Clone the Repository  
-```bash
-git clone https://github.com/your-username/expense-tracking-system.git
-cd expense-tracking-system
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Princegupta0488/expense-management-system.git
+   cd expense-management-system
+   ```
+1. **Install dependencies:**:   
+   ```commandline
+    pip install -r requirements.txt
+   ```
+1. **Run the FastAPI server:**:   
+   ```commandline
+    uvicorn server.server:app --reload
+   ```
+1. **Run the Streamlit app:**:   
+   ```commandline
+    streamlit run frontend/app.py
+   ```
